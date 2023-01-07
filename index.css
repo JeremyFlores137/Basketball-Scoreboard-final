@@ -1,0 +1,123 @@
+@font-face {
+    src: url("./CursedTimerULiL.ttf");
+    font-family: Cursed Timer ULiL;
+}
+body{
+    background-color: #1b244a;
+    box-sizing: content-box;
+    text-align: center;
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main>div{
+    margin: 5px 15px;
+}
+.side-score{
+    display: flex;
+}
+.side-score>div{
+    margin: 5px 5px;
+}
+.score-box{
+    position: relative;
+    padding-top: 40px;
+    background: black;
+    width: 155px;
+    left: 4px;
+    height: 120px;
+    font-size: 90px; 
+    border-radius: 10px;
+}
+.score-increment-btn{
+    border: 2px solid #9AABD8;
+    background-color: #1b244a;
+    border-radius: 6px;
+}
+.score-increment-btn:hover{
+    cursor: pointer;
+}
+.score-number{
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    color: #F94F6D;
+}
+.component>div{
+    margin: 26px 100px;
+}
+.component{
+  margin: auto;
+}
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+.play-btn{
+    width: 120px;
+    border: 0 solid white;
+    border-radius: 5px;
+    background-color: #F94F6D;
+    font-size: 17px;
+    color:white;
+    text-shadow: 0 0 4px black;
+    margin: 10px 20px;
+}
+.play-btn:hover{
+    background: linear-gradient( #d12139, #db6b7b);
+    cursor:pointer;
+}
+button{
+    width: 45px;
+    height: 45px;
+}
+table{
+    margin: 10px auto 30px auto;
+    width: 400px;
+    height: 150px;
+    color:white;
+    text-shadow: 0 0 2px black;
+}
+table, th, td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+.hole{
+    background-color:#F94F6D;
+}
+#home{
+    background-color: #264653;
+    text-shadow: 0 0 2px #e9c46a;
+}
+#guest{
+    background-color: #e9c46a;
+    text-shadow: 0 0 2px #264653;
+}
+.space{
+    background-color: #f4a261;
+    font-family: 'Cursed Timer ULiL';
+}
+.score-increment-btn:hover{
+    background: linear-gradient(#1b244a,#050b2a);
+}
+.row{
+    background-color: #e76f51;
+}
+.timer{
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    font-family: Cursed Timer ULiL;
+    background-color: #023047;
+    border-radius: 15px;
+}
+/*table{
+    display:none;
+}*/

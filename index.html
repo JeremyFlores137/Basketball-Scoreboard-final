@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Basketball Score Counter</title>
+</head>
+<body>
+    <div class="timer" id="timer-div" onclick="reset()">🧭Time: </div>
+    <div class="main">
+        <div class="component">
+            <h2 class="text">HOME</h2>
+            <div class="score-box score-number" id="increment-left">0</div>
+            <div class="side-score">
+                <div><button class="score-increment-btn" onclick="incrementr1()">
+                    <span class="score-number">+1</span></button></div>
+                <div><button class="score-increment-btn" onclick="incrementr2()">
+                    <span class="score-number">+2</span></button></div>
+                <div><button class="score-increment-btn" onclick="incrementr3()">
+                    <span class="score-number">+3</span></button></div>
+            </div>
+        </div>
+        <div class="component">
+            <h2 class="text">GUEST</h2>
+            <div class="score-box score-number" id="increment-right">0</div>
+            <div class="side-score">
+                <div><button class="score-increment-btn" onclick="incrementl1()">
+                    <span class="score-number">+1</span></button></div>
+                <div><button class="score-increment-btn" onclick="incrementl2()">
+                    <span class="score-number">+2</span></button></div>
+                <div><button class="score-increment-btn" onclick="incrementl3()">
+                    <span class="score-number">+3</span></button></div>
+            </div>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th class="hole"></th>
+            <th id="home">Home</th>
+            <th id="guest">Guest</th>
+        </tr>
+        <tr>
+            <td class="row">Period</td>
+            <td id="period-home" class="space"></td>
+            <td id="period-guest" class="space"></td>
+        </tr>
+        <tr>
+            <td class="row">Fouls</td>
+            <td id="fouls-home" class="space"></td>
+            <td id="fouls-guest" class="space"></td>
+        </tr>
+        <tr>
+            <td class="row">Timer</td>
+            <td id="timer-home" class="space"></td>
+            <td id="timer-guest" class="space"></td>
+        </tr>
+        <tr>
+            <td class="row">Score</td>
+            <td id="score-home" class="space"></td>
+            <td id="score-guest" class="space"></td>
+        </tr>
+    </table>
+    <button class="play-btn" onclick="play()">New Game</button>
+    <button class="play-btn" onclick="reset()">Finish</button>
+    <script src="./index.js"></script>
+</body>
+</html>
